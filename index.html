@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Filter Example</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .search-input {
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<input type="text" class="search-input" placeholder="Search...">
+
+<table >
+  <thead>
+    <tr>
+      <th>CPU Model</th>
+      <th>Clock Cycle</th>
+      <th>Core Count</th>
+    </tr>
+  </thead>
+  <tbody id="listItems">
+    <tr>
+      <td>Intel Core i9-9900K</td>
+      <td>3.6 GHz</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>AMD Ryzen 9 5950X</td>
+      <td>3.4 GHz</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Intel Core i7-10700K</td>
+      <td>3.8 GHz</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>AMD Ryzen 7 5800X</td>
+      <td>3.8 GHz</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Intel Core i5-11600K</td>
+      <td>3.9 GHz</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>AMD Ryzen 5 5600X</td>
+      <td>3.7 GHz</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Intel Core i9-11900K</td>
+      <td>3.5 GHz</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>AMD Ryzen 9 5900X</td>
+      <td>4.0 GHz</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Intel Core i3-10100</td>
+      <td>3.6 GHz</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>AMD Ryzen 3 3300X</td>
+      <td>3.8 GHz</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Intel Core i9-10900K</td>
+      <td>3.7 GHz</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>AMD Ryzen Threadripper 3960X</td>
+      <td>3.8 GHz</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Intel Core i7-9700K</td>
+      <td>3.6 GHz</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>AMD Ryzen 9 3950X</td>
+      <td>3.5 GHz</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Intel Core i5-9600K</td>
+      <td>3.7 GHz</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>AMD Ryzen 7 3700X</td>
+      <td>3.6 GHz</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Intel Core i7-8700K</td>
+      <td>3.7 GHz</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>AMD Ryzen 5 3600</td>
+      <td>3.6 GHz</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Intel Core i5-10600K</td>
+      <td>4.1 GHz</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+<script src="app.js"></script>
+</body>
+</html>
